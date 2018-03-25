@@ -12,6 +12,9 @@ Use `ng serve --open` to initialize the app.
 
 ## Configuration
 
+In the file `app.settings.ts`, the variable API_ENDPOINT must be set.
+Is usually "DOMAIN"/wp-json/ e.g. 'http://localhost:8888/wp-json/'.
+
 Create new components for your content types using `ng g c component-name`.
 
 Call the wp-link service into your new component.
