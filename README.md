@@ -2,7 +2,7 @@
 
 This project is a headless Angular application that interfaces with the WordPress REST API.
 
-It's great for a skeleton app the build custom Wordpress solutions on. This is a really good place to start for any developer, but I will continue to build on this to incorporate more functions from the API.
+It's great for a skeleton app to build custom Wordpress solutions on. This is a really good place to start for any developer, but I will continue to build on this to incorporate more functions from the API.
 
 ## Installation
 
