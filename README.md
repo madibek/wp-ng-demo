@@ -1,27 +1,31 @@
 # Spliff
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.3.
+This project is a headless Angular application that interfaces with the WordPress REST API.
 
-## Development server
+It's great for a skeleton app the build custom Wordpress solutions on. This is a really good place to start for any developer, but I will continue to build on this to incorporate more functions from the API.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Installation
 
-## Code scaffolding
+Download the zip or clone the Git.
+Run `npm install` in the application directory.
+Use `ng serve --open` to initialize the app.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Configuration
+
+Create new components for your content types using `ng g c component-name`.
+
+Call the wp-link service into your new component.
+`import { WpLinkService } from '../wp-link.service';`
+Look at other existing components to see the service usage.
 
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
+## Contact
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Current Known Bugs
+
+Navigation menu URLs not coming through the API correctly.
