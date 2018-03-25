@@ -1,0 +1,9 @@
+  <!-- Grey with black text -->
+<nav class="navbar navbar-expand-sm bg-light navbar-light">
+    <ul class="navbar-nav">
+      <li class="nav-item" *ngFor="let menuitem of navbar">
+        <a routerLinkActive="active" class="nav-link" [routerLink]="[menuitem.url]">{{ menuitem.title }}</a>
+      </li>
+    </ul>
+  </nav>
+  
