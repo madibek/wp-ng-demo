@@ -1,3 +1,5 @@
+![Alt text](http://web.adamhammad.com/wp-content/uploads/2018/03/spliff-pc.jpg?raw=true "Screenshot")
+
 # Spliff
 
 This project is a headless Angular application that interfaces with the WordPress REST API.
