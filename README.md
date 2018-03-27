@@ -1,5 +1,6 @@
-![Alt text](http://web.adamhammad.com/wp-content/uploads/2018/03/spliff-pc.jpg?raw=true "Screenshot")
-
+<p align="center">
+  <img src="http://web.adamhammad.com/wp-content/uploads/2018/03/spliff-logo.png">
+</p>
 # Spliff
 
 This project is a headless Angular application that interfaces with the [WordPress REST API](https://developer.wordpress.org/rest-api/).
@@ -7,6 +8,11 @@ This project is a headless Angular application that interfaces with the [WordPre
 It's great for a skeleton app to build custom WordPress solutions on. This is a really good place to start for any developer, but I will continue to build on this to incorporate more features from the API.
 
 ## Installation
+
+### Pre-requesites 
+The latest version of [Node.js](https://nodejs.org/en/) 
+Angular CLI - `npm install -g @angular/cli`
+
 
 Download the zip or clone the Git.<br>
 Run `npm install` in the application directory.<br>
