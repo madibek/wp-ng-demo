@@ -2,24 +2,32 @@
 
 This project is a headless Angular application that interfaces with the WordPress REST API.
 
-It's great for a skeleton app to build custom Wordpress solutions on. This is a really good place to start for any developer, but I will continue to build on this to incorporate more functions from the API.
+It's great for a skeleton app to build custom Wordpress solutions on. This is a really good place to start for any developer, but I will continue to build on this to incorporate more features from the API.
 
 ## Installation
 
-Download the zip or clone the Git.
-Run `npm install` in the application directory.
+Download the zip or clone the Git.<br>
+Run `npm install` in the application directory.<br>
 Use `ng serve --open` to initialize the app.
 
 ## Configuration
 
-In the file `app.settings.ts`, the variable API_ENDPOINT must be set.
-Is usually "DOMAIN"/wp-json/ e.g. 'http://localhost:8888/wp-json/'.
+In the file `app.settings.ts`, the variable API_ENDPOINT must be set.<br>
+Is usually "DOMAIN"/wp-json/ e.g. 'http://yourdomain.com/wp-json/'.
 
 Create new components for your content types using `ng g c component-name`.
 
 Call the wp-link service into your new component.
 `import { WpLinkService } from '../wp-link.service';`
-Look at other existing components to see the service usage.
+
+You can request any REST API data by using the HTTP client and the function getWpinfo();
+
+e.g. You have a custom post type 'Students', with the slug 'students':
+  this.http.getWpinfo('wp/v2/students');
+  
+Feel free to use any existing components as templates for new ones.
+
+All the routing is done in 'app/router.module.ts'
 
 ## Build
 
