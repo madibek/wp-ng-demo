@@ -2,9 +2,9 @@
 
 # Spliff
 
-This project is a headless Angular application that interfaces with the WordPress REST API.
+This project is a headless Angular application that interfaces with the [WordPress REST API](https://developer.wordpress.org/rest-api/).
 
-It's great for a skeleton app to build custom Wordpress solutions on. This is a really good place to start for any developer, but I will continue to build on this to incorporate more features from the API.
+It's great for a skeleton app to build custom WordPress solutions on. This is a really good place to start for any developer, but I will continue to build on this to incorporate more features from the API.
 
 ## Installation
 
@@ -27,7 +27,7 @@ You can request any REST API data by using the HTTP client and the function getW
 e.g. You have a custom post type 'Students', with the slug 'students':
   this.http.getWpinfo('wp/v2/students');
   
-Feel free to use any existing components as templates for new ones.
+Feel free to use any existing component as a template for any new ones.
 
 All the routing is done in 'app/router.module.ts'
 
