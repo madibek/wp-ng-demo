@@ -17,16 +17,18 @@ Configure Spliff in `app.settings.ts`<br>
 Use `ng serve --open` to initialize the app.
 
 ## Configuration
-In the file `app.settings.ts`, the variable API_ENDPOINT must be set.
+In the file `app.settings.ts`, the variable <b>API_ENDPOINT</b> must be set.
 Is usually `"DOMAIN"/wp-json/` e.g. `'http://yourdomain.com/wp-json/'`.
 
 Create new components for your content types using ng g c component-name.
 
-Call the wp-link service into your new component. import { WpLinkService } from '../wp-link.service';
+Call the wp-link service into your new component.<br>
+`import { WpLinkService } from '../wp-link.service';`
 
 You can request any REST API data by using the HTTP client and the function `getWpinfo();`
 
-e.g. You have a custom post type `'Students'`, with the slug `'students'`: `this.http.getWpinfo('wp/v2/students');`
+e.g. You have a custom post type <b>'Students'</b>, with the slug <b>'students'</b>: <br>
+`this.http.getWpinfo('wp/v2/students');`
 
 Feel free to use any existing component as a template for any new ones.
 
