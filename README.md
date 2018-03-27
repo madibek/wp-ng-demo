@@ -1,37 +1,42 @@
+<p align=center>
+  <img src="http://web.adamhammad.com/wp-content/uploads/2018/03/spliff-logo.png">
+</p>
 # Spliff
 This project is a headless Angular application that interfaces with the WordPress REST API.
 
 It's great for a skeleton app to build custom WordPress solutions on. This is a really good place to start for any developer, but I will continue to build on this to incorporate more features from the API.
 
-Installation
-Pre-requesites
-The latest version of Node.js Angular CLI - npm install -g @angular/cli
+## Installation
+#### Pre-requesites
+* The latest version of [Node.js](http://nodejs.org) <br>
+* [Angular CLI](https://angular.io) - npm install -g @angular/cli
 
-Download the zip or clone the Git.
-Run npm install in the application directory.
-Use ng serve --open to initialize the app.
+Download the zip or clone the Git.<br>
+Run `npm install` in the application directory.<br>
+Configure Spliff in `app.settings.ts`<br>
+Use `ng serve --open` to initialize the app.
 
-Configuration
-In the file app.settings.ts, the variable API_ENDPOINT must be set.
-Is usually "DOMAIN"/wp-json/ e.g. 'http://yourdomain.com/wp-json/'.
+## Configuration
+In the file `app.settings.ts`, the variable API_ENDPOINT must be set.
+Is usually `"DOMAIN"/wp-json/` e.g. `'http://yourdomain.com/wp-json/'`.
 
 Create new components for your content types using ng g c component-name.
 
 Call the wp-link service into your new component. import { WpLinkService } from '../wp-link.service';
 
-You can request any REST API data by using the HTTP client and the function getWpinfo();
+You can request any REST API data by using the HTTP client and the function `getWpinfo();`
 
-e.g. You have a custom post type 'Students', with the slug 'students': this.http.getWpinfo('wp/v2/students');
+e.g. You have a custom post type `'Students'`, with the slug `'students'`: `this.http.getWpinfo('wp/v2/students');`
 
 Feel free to use any existing component as a template for any new ones.
 
-All the routing is done in 'app/router.module.ts'
+All the routing is done in `'app/router.module.ts'`
 
-Build
+## Build
 Run ng build to build the project. The build artifacts will be stored in the dist/ directory. Use the -prod flag for a production build.
 
-Contact
-I can be contacted at adam@adamhammad.com
+## Contact
+I can be contacted at [adam@adamhammad.com](mailto:adam@adamhammad.com)
 
-Current Known Bugs
+## Current Known Bugs
 Navigation menu URLs not coming through the API correctly.
