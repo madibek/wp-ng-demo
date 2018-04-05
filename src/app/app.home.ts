@@ -10,12 +10,9 @@ import { HttpClient } from '@angular/common/http';
 export class AppHome {
 
   public wpinfo = [];
-
-  
   
   ngOnInit() {
-  
-    console.log('home');
+    
   }
  
 

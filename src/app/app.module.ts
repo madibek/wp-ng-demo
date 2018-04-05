@@ -8,9 +8,13 @@ import { HeaderComponent } from './header/header.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { PageNotFoundComponent } from './pagenotfound/pagenotfound.component';
-import { RouterModule } from '@angular/router';
-import { routing } from './router.module';
 import { PageComponent } from './page/page.component';
+import { SinglePostComponent } from './singlepost/singlepost.component';
+import { CustomUrlSerializer } from './url.serial'
+
+import { RouterModule, UrlSerializer } from '@angular/router';
+import { routing } from './router.module';
+import { NgStringPipesModule } from 'ngx-pipes';
 
 @NgModule({
   declarations: [
@@ -20,17 +24,19 @@ import { PageComponent } from './page/page.component';
     NavbarComponent,
     FooterComponent,
     PageNotFoundComponent,
-    PageComponent
+    PageComponent,
+    SinglePostComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     routing,
-    RouterModule
+    NgStringPipesModule
   ],
   providers: [
     WpLinkService,
-    RouterModule
+    RouterModule,
+
   ],
   bootstrap: [AppHome, NavbarComponent],
 })

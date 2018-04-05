@@ -7,11 +7,6 @@ import { AppSettings } from './app.settings';
 export class WpLinkService {
 
   constructor(private http:HttpClient) {}
- 
-
- 
-
-  // Uses http.get() to load data from a single API endpoint
 
   getWpinfo(customApiLink) {
 
@@ -29,5 +24,5 @@ export class WpLinkService {
     return wpData;
       
   }
-
 }
+

@@ -19,7 +19,6 @@ export class PostsComponent implements OnInit {
   ngOnInit(): void {
     this.posts = this.http.getWpinfo('wp/v2/posts');
     console.log(this.posts);
-  
   }
 
 }

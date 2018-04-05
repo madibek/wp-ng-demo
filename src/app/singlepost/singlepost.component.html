@@ -1,7 +1,7 @@
-<div class="card post-card" *ngFor="let post of posts">
-  <div class="card-header">
+<div class="post-card" *ngFor="let post of singlepost">
+  <div class="center">
+      <a href="./post/{{ post.slug }}"><h2 class="card-title">{{ post.title.rendered }}</h2></a>
       <h6 class="card-subtitle mb-1 text-muted">{{ post.date | date: "longDate" }}</h6>
-      <a href="./post/{{ post.slug }}"><h5 class="card-title">{{ post.title.rendered }}</h5></a>
   </div>
     <div class="card-body">      
       <p class="card-text" [innerHTML]="post.content.rendered">

@@ -33,6 +33,6 @@ import { NgModule } from '@angular/core';
 
 export class AppSettings {
 
-    public static API_ENDPOINT='http://localhost:8888/wp-json/';
+    public static API_ENDPOINT='http://spliff.adamhammad.com/admin/wp-json/';
 
   }

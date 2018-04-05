@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,900i');
 
-
 $font-stack:    'Roboto', sans-serif;
 $primary-color: #000;
 $secondary-color: #eceeef;
@@ -49,9 +48,8 @@ footer {
 .navbar {
     margin-bottom: 30px;
     a {
-    color: white;
-}
-    
+        color: white;
+    }
 }
 
 .navbar-nav {
@@ -90,7 +88,8 @@ h6.card-subtitle {
     max-width: 100%;
     height: auto;
 }
-// IMAGE ALIGN FIX
+
+/* IMAGE ALIGN FIX */
 .alignright {
     float: right;
 }
