@@ -6,7 +6,9 @@
 
 This project is a headless Angular application that interfaces with the WordPress REST API.
 
-It's great for a skeleton app to build custom WordPress solutions on. This is a really good place to start for any developer, but I will continue to build on this to incorporate more features from the API.
+This is a really good place to start for any developer. It’s a skeleton app to build your own custom Angular/WordPress solutions on!
+
+See it running at [spliff.adamhammad.com](http://spliff.adamhammad.com)
 
 ## Installation
 #### Pre-requesites
@@ -38,9 +40,3 @@ All the routing is done in `'app/router.module.ts'`
 
 ## Build
 Run ng build to build the project. The build artifacts will be stored in the dist/ directory. Use the -prod flag for a production build.
-
-## Contact
-I can be contacted at [adam@adamhammad.com](mailto:adam@adamhammad.com)
-
-## Current Known Bugs
-Navigation menu URLs not coming through the API correctly.
